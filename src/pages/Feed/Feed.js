@@ -38,7 +38,7 @@ class Feed extends Component {
     this.loadPosts();
 
 
-    openSocket('http://localhost:5000');
+    openSocket('http://localhost:5000', { transports: ['websocket'] });
   }
 
   loadPosts = direction => {
